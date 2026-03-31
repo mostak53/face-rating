@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Face Golden Ratio Rating System</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-face-smile"></i>
+                FaceRatio
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#whatis" class="nav-link">What is Golden Ratio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#howto" class="nav-link">How to Rate</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About Us</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Human Face Golden Ratio Rating</h1>
+            <p>Discover the science of facial beauty through the ancient Golden Ratio</p>
+            <button id="getStartedBtn" class="cta-button">Let's Get Started</button>
+        </div>
+    </section>
+
+    <!-- What is Golden Ratio -->
+    <section id="whatis" class="section">
+        <div class="container">
+            <h2>What is Human Face Golden Ratio?</h2>
+            <div class="content-grid">
+                <div class="content-card">
+                    <i class="fas fa-ruler-combined"></i>
+                    <h3>The Golden Ratio (φ = 1.618)</h3>
+                    <p>The Golden Ratio is a mathematical ratio found throughout nature, art, and architecture. In facial aesthetics, it measures the proportion between facial features.</p>
+                </div>
+                <div class="content-card">
+                    <i class="fas fa-face-smile"></i>
+                    <h3>Perfect Face Proportions</h3>
+                    <p>Ideal faces have features that align with φ ratio: eye spacing, nose width, lip proportions, and face length-to-width ratio.</p>
+                </div>
+                <div class="content-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Scientific Validation</h3>
+                    <p>Studies show faces closer to Golden Ratio are rated more attractive across cultures and time periods.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Rate -->
+    <section id="howto" class="section gray-bg">
+        <div class="container">
+            <h2>How to Rate Faces</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Login/Register</h3>
+                    <p>Create your account or login to start rating</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Browse Images</h3>
+                    <p>View celebrity photos in a responsive grid</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Rate with Stars</h3>
+                    <p>Hover and click 1-5 stars based on Golden Ratio perfection</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Track Progress</h3>
+                    <p>See your rating history and stats</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>We're passionate about exploring the mathematics of beauty. Our platform combines ancient wisdom with modern technology to help you understand facial aesthetics through the lens of the Golden Ratio.</p>
+                    <p>Join thousands of users rating faces and discovering the science behind attractiveness.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>10K+</h3>
+                        <p>Faces Rated</p>
+                    </div>
+                    <div class="stat">
+                        <h3>5K+</h3>
+                        <p>Active Users</p>
+                    </div>
+                    <div class="stat">
+                        <h3>100+</h3>
+                        <p>Celebrities</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="tab-container">
+                <button class="tab-btn active" data-tab="user">User Login</button>
+                <button class="tab-btn" data-tab="admin">Admin Login</button>
+            </div>
+            
+            <!-- User Login/Register -->
+            <div id="user-tab" class="tab-content active">
+                <h3 id="userTitle">Login</h3>
+                <form id="userForm">
+                    <input type="email" id="userEmail" placeholder="Email" required>
+                    <input type="password" id="userPassword" placeholder="Password" required>
+                    <button type="submit" id="userSubmitBtn">Login</button>
+                    <p id="toggleUserText">Don't have an account? <span id="registerLink">Register</span></p>
+                </form>
+            </div>
+
+            <!-- Admin Login -->
+            <div id="admin-tab" class="tab-content">
+                <h3>Admin Login</h3>
+                <form id="adminForm">
+                    <input type="password" id="adminPassword" placeholder="Admin Password" required>
+                    <button type="submit">Admin Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
